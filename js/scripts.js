@@ -2,19 +2,21 @@
 var encryptFunction = function(unencrypted) {
   var removeSpecials = unencrypted.toLowerCase().match(/[a-zA-Z]/gi)
   var numChars = removeSpecials.length;
+  return gridDimensions(numChars);
+
 }
 
 var gridDimensions = function(length) {
-  var xSide = int(sqrt(length))
-  var ySide = 0;
-  var dimensions = [];
-  if (length % 1 === 0) {
-    ySide = int(length/xSide);
-  } else {
-    ySide = int(length/xSide) + 1;
+  var sqrCheck = Math.sqrt(length);
+  var xSide = parseInt(Math.sqrt(length));
+  var ySide = parseInt(length/xSide);
+  var dimensions = [xSide, ySide];
+
+  if (sqrCheck % 1 !== 0) {
+    xSide = xSide + 1;
   }
 
-  return dimensions[xSide, ySide];
+  return dimensions;
 }
 
 $(document).ready(function(){
@@ -23,5 +25,6 @@ $(document).ready(function(){
     var value = $("#inputString").val();
     $("#result").show();
     $("#resultP").text(encryptFunction(value));
+    console.log(encryptFunction(value));
   });
 });
