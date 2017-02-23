@@ -1,11 +1,11 @@
-# _Roman Numeral Converter_
+# _Cryptosquare Encryption_
 
-#### _Intro to Programming Project for Epicodus - 22 February 2017_
+#### _Intro to Programming Project for Epicodus - 23 February 2017_
 
 #### By _**Chris Wainner (cwainner) && Dallas Slaughter (slaughtr)**_
 
 ## Description
-A webpage (using HTML, CSS, Bootstrap, JavaScript, and jQuery) that asks users to input a number and convert it into Roman numerals.
+A webpage (using HTML, CSS, Bootstrap, JavaScript, and jQuery) that asks users to input test that is then encrypted using a cryptosquare.
 
 ## Setup/Installation Requirements
 1. Clone this repository onto your desktop. This will place the all files and folders in onto your computer.
